@@ -68,7 +68,7 @@ class _CameraInferenceScreenState extends State<CameraInferenceScreen> {
         MediaQuery.of(context).orientation == Orientation.landscape;
 
     return Scaffold(
-      appBar: AppBar(title: const Text('YOLO Camera Inference')),
+      appBar: AppBar(title: const Text('카메라구동중')),
       body: ListenableBuilder(
         listenable: _controller,
         builder: (context, child) {
@@ -112,16 +112,16 @@ class _CameraInferenceScreenState extends State<CameraInferenceScreen> {
   }
 
   void _showError(String title, String message) => showDialog(
-    context: context,
-    builder: (context) => AlertDialog(
-      title: Text(title),
-      content: Text(message),
-      actions: [
-        TextButton(
-          onPressed: () => Navigator.pop(context),
-          child: const Text('OK'),
+        context: context,
+        builder: (context) => AlertDialog(
+          title: Text(title),
+          content: Text(message),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(context),
+              child: const Text('OK'),
+            ),
+          ],
         ),
-      ],
-    ),
-  );
+      );
 }

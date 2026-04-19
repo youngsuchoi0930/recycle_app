@@ -1,18 +1,24 @@
-# Miscellaneous
-*.class
-*.log
-*.pyc
-*.swp
-.DS_Store
-.atom/
-.buildlog/
-.history
-.svn/
-.cxx
-CLAUDE.md
-.CLAUDE.md
-migrate_working_dir/
-LICENSE.txt
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+/build/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
 
 # IntelliJ related
 *.iml
@@ -20,75 +26,114 @@ LICENSE.txt
 *.iws
 .idea/
 
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
+# Visual Studio Code related
 .vscode/
+.history/
 
-# Flutter/Dart/Pub related
-# Libraries should not include pubspec.lock, per https://dart.dev/guides/libraries/private-files#pubspeclock.
-/pubspec.lock
-/example/pubspec.lock
-**/doc/api/
-.dart_tool/
-.packages
-build/
+# macOS
+.DS_Store
 
-# Plugin symlinks
-**/linux/flutter/ephemeral/
-**/windows/flutter/ephemeral/
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
 
-# Model files
-**/*.tflite
-**/*.mlmodel
-**/*.mlpackage
+# Android
+android/.gradle/
+android/captures/
+android/gradlew
+android/gradlew.bat
+android/local.properties
+android/**/GeneratedPluginRegistrant.java
+android/key.properties
+**/android/app/*.iml
+**/android/app/.classpath
+**/android/app/.project
+**/android/app/.settings/
+**/android/app/build/
+
+# iOS
+**/ios/**/*.mode1v3
+**/ios/**/*.mode2v3
+**/ios/**/*.moved-aside
+**/ios/**/*.pbxuser
+**/ios/**/*.perspectivev3
+**/ios/**/*sync/
+**/ios/**/.sconsign.dblite
+**/ios/**/.tags*
+**/ios/**/.vagrant/
+**/ios/**/DerivedData/
+**/ios/**/Icon?
+**/ios/**/Pods/
+**/ios/**/.symbols/
+**/ios/**/profile
+**/ios/**/xcuserdata
+**/ios/.generated/
+**/ios/Flutter/.last_build_id
+**/ios/Flutter/App.framework
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/Flutter.podspec
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/ephemeral/
+**/ios/Flutter/app.flx
+**/ios/Flutter/app.zip
+**/ios/Flutter/flutter_assets/
+**/ios/Flutter/flutter_export_environment.sh
+**/ios/ServiceDefinitions.json
+**/ios/Runner/GeneratedPluginRegistrant.*
+
+# macOS
+**/macos/Flutter/GeneratedPluginRegistrant.swift
+**/macos/Flutter/ephemeral/
 
 # Coverage
 coverage/
-*.lcov
-coverage.json
-coverage.xml
 
-# Python virtual environment
-yolo_env/
-yolov8n_saved_model/android/reference/build.gradle
-android/src/test/kotlin/com/ultralytics/yolo/
-android/reference/build.gradle
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+*.egg-info/
 
-# Test apps (not for commit)
-streaming_test_app/
+# Model files (크기 큰 파일은 제외)
+# 필요하면 주석 처리
+# *.h5
+# *.tflite
 
-# Gradle build artifacts
-**/.gradle/
-**/android/local.properties
-**/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java
+# Image files (필요한 것만 올리기)
+# Sample/
+# dataset/
 
-# Flutter generated files
-**/.flutter-plugins
-**/.flutter-plugins-dependencies
-**/ios/.symlinks/
-**/ios/Pods/
-**/ios/Flutter/Generated.xcconfig
-**/ios/Flutter/flutter_export_environment.sh
-**/ios/Runner/GeneratedPluginRegistrant.*
-**/ios/Runner.xcworkspace/xcuserdata/
-**/macos/Flutter/ephemeral/
+# IDE
+.vscode/settings.json
+.idea/
 
-# Example apps build artifacts (keep them for development but not in git)
-simple_example/.flutter-plugins
-simple_example/.flutter-plugins-dependencies
-simple_example/android/.gradle/
-simple_example/android/local.properties
-simple_example/ios/.symlinks/
-simple_example/ios/Pods/
-simple_example/ios/Runner.xcworkspace/xcuserdata/
-simple_example/ios/Flutter/Generated.xcconfig
-simple_example/ios/Flutter/flutter_export_environment.sh
-simple_example/ios/Runner/GeneratedPluginRegistrant.*
-simple_example/macos/Flutter/ephemeral/
+# OS
+Thumbs.db
+.DS_Store
 
-streaming_test_example/
-threshold_test_sample/
+# Logs
+*.log
+logs/
 
-# FVM Version Cache
-.fvm/
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+
+# Node modules (if any)
+node_modules/
+
+# Exceptions to above rules
+!**/ios/**/default.mode1v3
+!**/ios/**/default.mode2v3
+!**/ios/**/default.pbxuser
+!**/ios/**/default.perspectivev3
+!/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages

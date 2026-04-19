@@ -1,7 +1,5 @@
-// Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
-
 import 'package:flutter/material.dart';
-import 'package:ultralytics_yolo_example/presentation/screens/camera_inference_screen.dart';
+import 'presentation/screens/trash_classify_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,9 +10,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      title: 'YOLO useGpu Example',
-      home: CameraInferenceScreen(),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        brightness: Brightness.dark,
+        primarySwatch: Colors.cyan,
+        scaffoldBackgroundColor: const Color(0xFF0B1020),
+      ),
+      home: const TrashClassifyScreen(),
     );
   }
 }
