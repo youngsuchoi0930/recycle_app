@@ -1,4 +1,4 @@
-# ♻️ 분리수거 AI 분류 앱
+# ♻️ [AI휴먼4] 분리수거 AI 분류 앱 ( Yolo -> 분류)
 
 <div align="center">
 
