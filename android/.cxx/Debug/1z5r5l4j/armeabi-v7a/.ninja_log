@@ -1,0 +1,5 @@
+# ninja log v5
+1	1312	7981117594638963	CMakeFiles/ultralytics.dir/native-lib.cpp.o	23dc4fe5dc0831cf
+1327	1455	7981117596158950	C:/yolo-flutter-app/example/build/ultralytics_yolo/intermediates/cxx/Debug/1z5r5l4j/obj/armeabi-v7a/libultralytics.so	c54f08c4d4e57f43
+6	175	7981187525085839	C:/yolo-flutter-app/example/build/ultralytics_yolo/intermediates/cxx/Debug/1z5r5l4j/obj/armeabi-v7a/libultralytics.so	c54f08c4d4e57f43
+6	157	7981196377089640	C:/yolo-flutter-app/example/build/ultralytics_yolo/intermediates/cxx/Debug/1z5r5l4j/obj/armeabi-v7a/libultralytics.so	c54f08c4d4e57f43

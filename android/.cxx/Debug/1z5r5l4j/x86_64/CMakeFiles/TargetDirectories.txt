@@ -1,0 +1,3 @@
+C:/yolo-flutter-app/android/.cxx/Debug/1z5r5l4j/x86_64/CMakeFiles/ultralytics.dir
+C:/yolo-flutter-app/android/.cxx/Debug/1z5r5l4j/x86_64/CMakeFiles/edit_cache.dir
+C:/yolo-flutter-app/android/.cxx/Debug/1z5r5l4j/x86_64/CMakeFiles/rebuild_cache.dir

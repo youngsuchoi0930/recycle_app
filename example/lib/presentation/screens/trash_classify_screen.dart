@@ -131,9 +131,7 @@ class _TrashClassifyScreenState extends State<TrashClassifyScreen> {
         height: _inputSize,
       );
 
-      // ⭐⭐⭐ 중요: 정규화 없이 0~255 그대로! ⭐⭐⭐
-      // 학습 시 모델 내부에 preprocess_input이 포함되어 있으므로
-      // Flutter에서는 추가 전처리하면 안 됨!
+
       final input = List.generate(
         1,
         (_) => List.generate(
