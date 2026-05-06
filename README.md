@@ -1,4 +1,4 @@
-# ♻️ [AI휴먼4 app 실습] 분리수거 AI 분류 앱
+# ♻️ [AI휴먼4 실습] 분리수거 AI 분류 앱
 
 <div align="center">
 
